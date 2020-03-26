@@ -14,6 +14,22 @@
     max-height:100%;
     overflow:auto;
 }
+
+.title1{
+    text-align: center;
+    font-size: 2em;
+}
+
+.body1{
+    font-size: 1em;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    background: #ddd;
+  }
+
 :root {
     --main-bg-color:#a7501d;
     --secundary-color:#0000006e;
