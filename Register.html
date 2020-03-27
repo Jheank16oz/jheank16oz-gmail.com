@@ -21,6 +21,25 @@
 
 </head>
 <body >
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Registro exitoso</h4>
+      <p>Se registro la información de
+        ubicación y contacto de tu Familia</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!"  class="modal-close waves-effecs waves-teal btn-flat">Registrarse</a>
+    </div>
+  </div>
+
+
+
+
+
     <div class="container">
 
         <div class="row">
@@ -43,13 +62,25 @@
             <input id="telephone" placeholder="+57 Teléfono" type="tel" class="validate">
             <label for="telephone" class="active">Teléfono</label>
           </div>
-          <p class="center-align col s12">
+          <p data-target="modal1" class="center-align col s12 modal-trigger">
             <a class="waves-effect waves-light btn">Guardar</a>
            </p>
         </div>
     </div>
+
+
+
+  <script src="assets/register.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+  </script>
     
-    <script src="assets/register.js"></script>
+    
+    
+    
     
 </body>
 </html>
