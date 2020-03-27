@@ -8,7 +8,7 @@ map = new GMaps({
   });
 
   var marker = new google.maps.Marker({
-    position: latLng,
+    position: latlng,
     map: map,
     title: 'Place the marker for your location!', //The title on hover to display
     draggable: true //this makes it drag and drop
@@ -34,5 +34,12 @@ GMaps.geolocate({
     },
     always: function() {
     }
+  });
+
+
+  /** modal **/
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
   });
 
